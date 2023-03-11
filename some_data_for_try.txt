@@ -1,0 +1,39 @@
+    req1 = "Доставить 4 oranges from Магазин до Склад"
+    req2 = "Доставить 4 oranges from Магазин Склад"
+    req3 = "Доставить 4 щуки до пятой авеню стрит быстро"
+    req4 = "Доставить Х питонов из Склад до Магазин"
+    req5 = "Доставить 5 питонов из Склад до Склад"
+
+    try:
+        new_request = Request(store_list, req5)
+        print(new_request)
+    except Exception as e:
+        print(f"Error: {e}")
+
+    req6 = "Отправить 3 apples из Склад до Магазин"
+    new_request = Request(store_list, req6)
+    print(new_request)
+    new_request.execute()
+
+    req6 = "Отправить 2 grapes из Склад до Магазин"
+    new_request = Request(store_list, req6)
+    print(new_request)
+    new_request.execute()
+
+    req6 = "Отправить 1 pineapples из Склад до Магазин"
+    new_request = Request(store_list, req6)
+    print(new_request)
+    new_request.execute()
+
+    req6 = "Отправить 2 watermelons из Склад до Магазин"
+    new_request = Request(store_list, req6)
+    print(new_request)
+    new_request.execute()
+
+    req6 = "Отправить 2 oranges из Склад до Магазин"
+    new_request = Request(store_list, req6)
+    print(new_request)
+    new_request.execute()
+
+    print_all_storages(store_list)
+
